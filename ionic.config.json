@@ -1,0 +1,7 @@
+{
+  "name": "alsw",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
