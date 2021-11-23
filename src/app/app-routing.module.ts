@@ -23,11 +23,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/descripcion-planets/descripcion-planets.module').then( m => m.DescripcionPlanetsPageModule)
   },
   {
-    path: 'descripcion-people',
+    path: 'people/:id',
     loadChildren: () => import('./pages/descripcion-people/descripcion-people.module').then( m => m.DescripcionPeoplePageModule)
   },
   {
-    path: 'descripcion-starships',
+    path: 'starships/:id',
     loadChildren: () => import('./pages/descripcion-starships/descripcion-starships.module').then( m => m.DescripcionStarshipsPageModule)
   }
 ];

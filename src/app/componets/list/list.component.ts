@@ -12,8 +12,8 @@ export class ListComponent implements OnInit {
 @Input() obtenApi;
 @Input() icon;
 
-id:string;
-path:string;
+id:string
+path:string
 
   constructor(private router1:Router) { }
 

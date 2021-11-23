@@ -3,10 +3,35 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
-    <ion-title>{{people.name}}</ion-title>
+    <ion-text color="secondary">
+      <ion-title>{{people.name}}</ion-title>
+    </ion-text>
+    
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <h1> {{people.name}}</h1>
+  <ion-card>
+    <ion-item>
+      <ion-icon name= "people-circle" slot= "start"></ion-icon>
+      <ion-label>{{people.gender}}</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p>HEIGHT: {{people.height}}</p>
+            <p>HAIR COLOR: {{people.hair_color}}</p>
+          </ion-col>
+          <ion-col>
+            <p>EYE COLOR: {{people.eye_color}}</p>
+            <p>SKIN: {{people.skin_color}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+   
 </ion-content>
