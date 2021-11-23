@@ -17,6 +17,18 @@ const routes: Routes = [
   {
     path: 'starships',
     loadChildren: () => import('./pages/starships/starships.module').then( m => m.StarshipsPageModule)
+  },
+  {
+    path: 'planets/:id',
+    loadChildren: () => import('./pages/descripcion-planets/descripcion-planets.module').then( m => m.DescripcionPlanetsPageModule)
+  },
+  {
+    path: 'descripcion-people',
+    loadChildren: () => import('./pages/descripcion-people/descripcion-people.module').then( m => m.DescripcionPeoplePageModule)
+  },
+  {
+    path: 'descripcion-starships',
+    loadChildren: () => import('./pages/descripcion-starships/descripcion-starships.module').then( m => m.DescripcionStarshipsPageModule)
   }
 ];
 @NgModule({

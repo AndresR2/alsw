@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SwapiService } from 'src/app/services/swapi.service';
 
 @Component({
   selector: 'app-starships',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StarshipsPage implements OnInit {
 
-  constructor() { }
+starships:any;
+iconname=`rocket-outline`;
+
+  constructor(private obtswserv3:SwapiService) { }
 
   ngOnInit() {
+    this.starships= this.obtswserv3.getSwapi(`starships`)
   }
 
 }

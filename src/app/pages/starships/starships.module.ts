@@ -7,13 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { StarshipsPageRoutingModule } from './starships-routing.module';
 
 import { StarshipsPage } from './starships.page';
+import { ComponentsModule } from 'src/app/components/components.module';
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    StarshipsPageRoutingModule
+    StarshipsPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [StarshipsPage]
 })

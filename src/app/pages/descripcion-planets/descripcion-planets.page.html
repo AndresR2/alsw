@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{planets.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <h1> {{planets.name}}</h1>
+  
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name= "planet" slot= "start"></ion-icon>
+      <ion-label>{{planets.terrain}}</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p>CLIMATE: {{planets.climate}}</p>
+            <p>ROTATION: {{planets.rotation_period}}</p>
+          </ion-col>
+          <ion-col>
+            <p>SURFACE WATER: {{planets.surface_water}}</p>
+            <p>POPULATION: {{planets.population}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
